@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tenta abre esse site em varios dispositivos diferentes ou simplemente aumente e diminua o tmaanho do seu navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexível">
+    </picture>
+    <h1>Reproduxindo audio</h1>
+    <p>Vamos aprender a reprodizir audios em HTML5</p>
+    <audio src="midia/viyn-cotton-candy-loop-version-13253.mp3" controls autoplay></audio>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/viyn-cotton-candy-loop-version-13253.mp3" type="audio/mp3">
+        <source src="midia/viyn-cotton-candy-loop-version-13253.mp3" type="audio/ogg">
+        <p>Infelmente seu navegador nao consegui reproduzir áudio</p>
+        <a href="midia/viyn-cotton-candy-loop-version-13253.mp3">clique aqui para abaixar o arquivo</a>
+    </audio>
+</body>
+</html>
