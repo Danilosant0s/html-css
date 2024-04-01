@@ -12,6 +12,14 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+        }
+    
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
         }
         td, th{
             border: 1px solid black;
@@ -22,16 +30,30 @@
             background-color: gray;
             color: white;
         }
+
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+
+        }
+        tbody > tr:nth-child(odd){
+            background-color: lightgray;
+
+        }
         td.num{
             text-align: right;
         }
+      
     </style>
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
     <!--
+
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+        CAPTION
             THEAD
                TR, TD, TH
             TBODY
@@ -40,9 +62,10 @@
             TF, TD, TH
     -->
     <table>
+        <caption>Populaçao das unidades federativas</caption>
         <thead>
-                <th>Estados</th>
-                <th>Populaçao</th>
+                <th scope="col">Estados</th>
+                <th scope="col">Populaçao</th>
         </thead>
         <tbody>
             <tr>
@@ -64,14 +87,14 @@
             <tr>
                 <td>Porto alegre</td>
                 <td class="num">17 264 943</td>
-            </tr> class="num"
+            </tr>
             <tr>
                 <td>Mato grosso</td>
                 <td class="num">17 264 943</td>
             </tr>
         </tbody>
         <tfoot>
-             <th>Total de Habitantes</th>
+             <th scope="row">Total de Habitantes</th>
              <td class="num">22 303...</td>
         </tfoot>
     </table>
