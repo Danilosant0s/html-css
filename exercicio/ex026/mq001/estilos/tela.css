@@ -13,7 +13,7 @@ html{
 }
 
 header{
-    background-color: gray;
+    background-color: rgb(84, 84, 218);
 }
 
 header > h1{
@@ -23,10 +23,11 @@ header > h1{
 menu ul{
     list-style-type: none;
     background-color: lightblue;
+    text-align: center;
 }
 
 menu li{
-    background-color: blue;
+    background-color: rgb(154, 154, 229);
     color: white;
     display: inline-block;
     padding: 10px;
